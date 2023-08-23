@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ComedyGamesWorld</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+  <body class="myBody">
+    <video autoplay loop muted id="myVideo">
+        <source src="/videos/game_video_for_website.mp4" type="video/mp4">
+    </video>
+    <div class="navbar_of_website hidden2">
+        <div class="logo_and_name">
+            <div class="logo"><a href=""><img id="logo_img" src="/images/logo_ComedyGamesWorld.png" alt=""></a></div>&nbsp;&nbsp;&nbsp;
+            <!-- <div class="name"><h2 id="name_of_website">ComedyGamesWorld</h2></div> -->
+        </div>
+        <div class="pages">
+            <div class="Home">
+                <a id="Home" href="#bottom">Home</a>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="AboutUs">
+                <a id="AboutUs" href="#bottom1">About Us</a>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="Explore">
+                <a id="Explore" href="#bottom2">Games</a>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="ContactUs">
+                <a id="ContactUs" href="#bottom3">Contact Us</a>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="SignIn">
+                <li class="list list_mother">
+                    <a class="login_button" href="#">Login/Register</a>
+                    <ul class="list list_position">
+                        <li class="dd1"><a class="dropdown1" href="/login.html">Login/Sign In</a></li>
+                        <li class="dd2"><a class="dropdown2" href="/register.html">Register/Sign Up</a></li>
+                    </ul>
+                </li>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="Search">
+                <input class="search-control" id="search-control" type="search" placeholder="Search Games" aria-label="Search" onkeyup="searchGame()">
+                <button class="search_icon" id="search_icon" type="submit"><img id="search_icon"src="/images/magnifier.png" width="20px" height="auto" onclick="searchGame()"></button>
+            </div>
+        </div>
+    </div>
+    <div class="main_container">
+        <div class="container_under_main-1" id="bottom">
+            <div class="body_inside_container1">
+                <div class="body1_inside_body_under_controller1">
+                    <h1 class="slogan hidden1">ComedyGamesWorld</h1>
+                    <div class="underline hidden1"></div>
+                    <p class="description hidden1">
+                        A NEW PLACE FOR PLAYING ALL YOUR FAVOURITE GAMES ABSOLUTELY FOR FREE WITHOUT ADS AND INTERRUPTIONS. ENJOY !!! HURRY UP AND SIGN UP NOW !!!
+                    </p>
+                    <div class="SignIn_Register hidden1">
+                        <a href="/login.html" class="SignIn_Register_a_tag hidden1">Sign Up</a>
+                    </div>
+                </div>
+                <div class="body2_inside_body_under_controller1">
+                    <!-- <img src="/images/console.png" class="controller wiggle wiggle1" alt="" /> -->
+                </div>
+            </div>
+            <div class="underline2" id="bottom1"></div>
+        </div>
+        <div class="container_under_main-2">
+            <div class="body_inside_container2">
+                <div class="body1_inside_body_under_controller2">
+                    <h1 class="slogan2 hidden1">ABOUT US</h1>
+                    <div class="underline3 hidden1"></div>
+                    <p class="description hidden1">
+                        Get to play games like tic-tac-toe, snake game, fighting game, etc. Go to the Games section of this page to see the variety of games you can play on our website - www.ComedyGamesWorld.com. We are an digital games and entertainment company. We develop and publish entertaining games.
+                    </p>
+                </div>
+                <div class="body2_inside_body_under_controller2">
+                    <!-- <img src="/images/console.png" class="controller wiggle wiggle1" alt="" /> -->
+                </div>
+            </div>
+            <div class="underline4"></div>
+        </div>
+        <div class="container_under_main-3" id="bottom2">
+            <h1 class="slogan3  hidden2">GAMES</h1>
+            <div class="first_row_cards card-container">
+                <div class="card-myedit hidden1" >
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="/snakeGame.html" class="game_link"><h2 class="card-text-myedit">Snake Game</h2></a>
+                    </div>
+                </div>
+                <div class="card-myedit hidden2">
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="/tictactoe.html" class="game_link"><h2 class="card-text-myedit">Tic-Tac-Toe</h2></a>
+                    </div>
+                </div>
+                <div class="card-myedit hidden3">
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="" class="game_link"><h2 class="card-text-myedit">Save the planet</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="second_row_cards card-container">
+                <div class="card-myedit hidden1">
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="" class="game_link"><h2 class="card-text-myedit">Dinosaur Run</h2></a>
+                    </div>
+                </div>
+                <div class="card-myedit hidden2">
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="" class="game_link"><h2 class="card-text-myedit">Fruit Ninja</h2></a>
+                    </div>
+                </div>
+                <div class="card-myedit hidden3">
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="" class="game_link"><h2 class="card-text-myedit">Bullseye</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="third_row_cards card-container">
+                <div class="card-myedit hidden1">
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="" class="game_link"><h2 class="card-text-myedit">Flipa-flip</h2></a>
+                    </div>
+                </div>
+                <div class="card-myedit hidden2">
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="" class="game_link"><h2 class="card-text-myedit">Whac-a-mole</h2></a>
+                    </div>
+                </div>
+                <div class="card-myedit hidden3">
+                    <img src="/images/snake.png" class="card-img-top-myedit" alt="...">
+                    <div class="card-body-myedit">
+                        <a href="" class="game_link"><h2 class="card-text-myedit">Rock Paper Scissor</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="not_available_msg"><h2>THIS GAME IS NOT AVAILABLE. PLEASE SEARCH FOR OTHER GAMES.</h2></div>
+            <div class="underline4 class-made-for-selecting-this"></div>
+        </div>
+        <div class="contactUsHeading"><h1 class="slogan3 hidden2" id="bottom3">Contact Us</h1></div>
+        <div class="container_under_main-4" >
+            <form class="email_us" onsubmit="sendEmail(); reset(); return false" >
+                <div class="name_email hidden1">
+                    <input type="value" id="name" placeholder="Full Name" class="name" required>
+                    <input type="value" id="email" placeholder="Email" class="email" required>
+                </div>
+                <div class="message hidden1">
+                    <textarea id="message" placeholder="Write your message to us..." class="text_area" required></textarea>
+                </div>
+                <button class="send_btn hidden1" type="submit">SEND</button>
+            </form>
+            <div class="email_us_description">
+                <h1 class="description_element hidden3" id="h1_tag_description">Contact Us Through Email</h1>
+                <div class="underline5 hidden3"></div>
+                <a href="mailto:rajdeepchowdhury318@gmail.com" target="_blank" class="description_element hidden3" id="p_tag_description_1">rajdeepchowdhury318@gmail.com</a>
+                <p class="description_element hidden3" id="p_tag_description_2">Contact us whenever you want through email or through the social media platforms, the links of which are given below in the footer section of the website, and tell us about your experience playing games in this website.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_left_part">
+            <div class="logo">
+                <a href="#bottom">
+                    <img id="logo_img" src="/images/logo_ComedyGamesWorld.png" alt="">
+                </a>
+            </div>
+            <div class="copyright"><p>&copy; 2023 ComedyGamesWorld - <br>developed by Rajdeep Chowdhury</p></div>
+        </div>
+        <div class="footer_right_part">
+            <div class="Instagram social_icon_div" >
+                <a class="icon_link" target="_blank" id="Instagram" href="https://www.instagram.com/rajdeep_editz_original/"><img class="social_icon" src="/images/instagram.png" alt="..."></a>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="Facebook social_icon_div">
+                <a class="icon_link" target="_blank" id="Facebook" href="https://www.facebook.com/profile.php?id=100064266127151"><img class="social_icon" src="/images/facebook.png" alt="..."></a>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="LinkedIn social_icon_div">
+                <a class="icon_link" target="_blank" id="LinkedIn" href="https://www.linkedin.com/in/rajdeep-chowdhury-3230461b3/"><img class="social_icon" src="/images/linkedin.png" alt="..."></a>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="Twitter social_icon_div">
+                <a class="icon_link" target="_blank" id="Twitter" href="https://twitter.com/rajdeep27232"><img class="social_icon" src="/images/twitter.png" alt="..."></a>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="Github social_icon_div">
+                <a class="icon_link" target="_blank" id="Github" href="https://github.com/deepbeatz"><img class="social_icon" src="/images/github.png" alt="..."></a>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <script src="/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+  </body>
+</html>

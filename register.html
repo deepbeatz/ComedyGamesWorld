@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="91672827494-u39acrl4b4h5d0rnbvpafob9d3hsnpp6.apps.googleusercontent.com.apps.googleusercontent.com">
+    <title>Login Page - ComedyGamesWorld</title>
+    <link rel="stylesheet" href="/register.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script defer src="/register.js"></script>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="/videos/bg video 3.mp4" type="video/mp4">
+    </video>
+    <div class="logo_and_name">
+        <div class="logo"><a href="/index.html"><img id="logo_img" width="80px" height="auto" src="/images/logo_ComedyGamesWorld.png" alt=""></a></div>&nbsp;&nbsp;&nbsp;
+        <div class="name"><a href="/index.html" id="h2_a"><h2 id="name_of_website">ComedyGamesWorld</h2></a></div>
+    </div>
+    <div class="main_wrapper">
+        <div class="wrapper">
+            <form action="/process-signup.php" method="post" id="signup" novalidate>
+                <h1>Create Account</h1>
+                <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+                <!-- <div class="data">
+                    <p>Name</p>
+                    <p id="nameGoogle" class="alert alert-success"></p>
+                    <p>Profile Pic</p>
+                    <img id="imageGoogle" class="rounded-circle" width="100" height="100" />
+                    <p>Email</p>
+                    <p id="emailGoogle"></p>
+                    <button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button>
+                </div> -->
+                <div class="input-field">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Enter your name</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="email" name="email" required>
+                    <label for="email">Enter your email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Create password</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password_confirmation" name="password_confirmation" required>
+                    <label for="password_confirmation">Confirm password</label>
+                </div>
+                <button type="submit" id="register">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>

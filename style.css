@@ -1,0 +1,769 @@
+@font-face{
+    font-family: 'minecraft-font-1';
+    src: url('/minecraft-ten-font/MinecraftTen-VGORe.ttf')
+}
+@font-face{
+    font-family: 'minecraft-font-2';
+    src: url('/minecraft-font/MinecraftItalic-R8Mo.otf')
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.main_container{
+    height: 520vh;
+    width: 100vw;
+    margin:0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+.container_under_main-1{
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 17vh;
+    height:auto;
+    width: 100%;
+}
+.container_under_main-2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height:auto;
+    width: 100%;
+}
+.container_under_main-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    margin: 0px;
+    padding: 0px;
+    height:auto;
+    width: 100%;
+}
+.container_under_main-4{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content:space-between;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+    height:auto;
+    width: 100%;
+}
+#myVideo{
+    position: fixed;
+    width: 100%;
+    z-index: -100;
+    /* max-height: 100vh; */
+}
+.navbar_of_website{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 13px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.388);
+    width: 97.7%;
+    border: solid 3px rgb(255, 255, 255);
+    border-radius: 20px;
+    float: top;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.logo_and_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    border-radius: 20px;
+}
+#logo_img{
+    height: 70px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+#logo_img:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+#name_of_website{
+    font-family: 'minecraft-font-1';
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    transition: color 0.2s ease-in-out;
+}
+#name_of_website:hover{
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    /* animation: animate_title 0.6s steps(8) forwards; */
+}
+/* @keyframes animate_title{
+
+} */
+.pages{
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    font-family: 'minecraft-font-1';
+    cursor: pointer;
+    font-size: larger;
+    text-shadow: 1px 1px rgb(255, 0, 0);
+}
+#Home{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+#Home:hover{
+    color:rgb(255, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+#AboutUs{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+#AboutUs:hover{
+    color:rgb(255, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+#Explore{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+#Explore:hover{
+    color:rgb(255, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+#ContactUs{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+#ContactUs:hover{
+    color:rgb(255, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+.body_inside_container1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.body_inside_container2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slogan{
+    font-family: 'minecraft-font-1';
+    color:rgb(255, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    font-size: 60px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 70px;
+}
+.slogan2{
+    font-family: 'minecraft-font-1';
+    color:rgb(255, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    font-size: 60px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 40px;
+}
+.slogan3{
+    font-family: 'minecraft-font-1';
+    color:rgb(255, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    font-size: 60px;
+    /* padding-bottom: 10px; */
+    text-align: center;
+}
+.underline{
+    background-color: red;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 2px;
+    padding: 3px;
+    margin: 20px;
+}
+.underline2{
+    background-color: red;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 97%;
+    height:2px;
+    padding: 3px;
+    margin: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.underline3{
+    background-color: red;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 45%;
+    height:2px;
+    padding: 3px;
+    margin: 20px;
+}
+.underline4{
+    background-color: red;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 97%;
+    height:2px;
+    padding: 3px;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+.underline5{
+    background-color: red;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 80%;
+    height:2px;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+.description{
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'minecraft-font-2';
+    text-shadow: 1px 2px rgba(255, 255, 255, 0.345);
+}
+.body1_inside_body_under_controller1{
+    width: 50%;
+}
+.body2_inside_body_under_controller1{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+.body1_inside_body_under_controller2{
+    width: 50%;
+}
+.body2_inside_body_under_controller2{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+.controller{
+    width: 70%;
+    cursor: pointer;
+}
+/* @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes wiggle1 {
+    0% { transform: rotate(0deg); }
+    70% { transform: scale(1.05); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+.controller.wiggle {
+  display: inline-block;
+  animation: wiggle 2.5s infinite ease-in-out;
+}
+.controller.wiggle:hover {
+  animation: wiggle1 0.8s infinite ease-in-out;
+} */
+.hidden1{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+}
+.hidden2{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(20%);
+    transition: all 0.4s ease-in-out;
+}
+.hidden3{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out;
+}
+.show1{
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+.show2{
+    filter: blur(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+.description{
+    transition-delay: 100ms;
+}
+.first_row_cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: auto;
+    margin-bottom: 30px;
+}
+.second_row_cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: auto;
+    margin-bottom: 30px;
+}
+.third_row_cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: auto;
+    /* margin-bottom: 30px; */
+}
+.card-text-myedit{
+    text-align: center;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: 'minecraft-font-1';
+    color:rgb(255, 0, 0);
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    font-size: 30px;
+    transition: color 0.2s ease-in-out;
+}
+.card-text-myedit:hover{
+    color:rgb(234, 234, 234);
+    text-shadow: 3px 3px rgb(255, 0, 0);
+    cursor: pointer;
+}
+.card-myedit{
+    background-color: rgba(255, 255, 255, 0.689);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    width: 20rem;
+    box-shadow: 5px 5px rgb(255, 0, 0);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.card-myedit:hover{
+    transform: scale(1.05);
+}
+.card-img-top-myedit{
+    /* border-bottom: solid 1px rgb(0, 0, 0); */
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.772);
+    /* filter: drop-shadow(2px 2px rgb(255, 0, 0)); */
+}
+.card-body-myedit{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.game_link{
+    text-decoration: none;
+}
+.Search{
+    display: flex;
+    align-items: center;
+}
+.SignIn{
+    display: flex;
+    align-items: center;
+}
+.login_button{
+    text-decoration: none;
+    font-family: 'minecraft-font-1';
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(255, 0, 0);
+    transition: color 0.2s ease-in-out;
+}
+.login_button:hover{
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+.search-control{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: 'minecraft-font-1';
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.388);
+    padding-bottom: 6px;
+    padding-left: 15px;
+    color: white;
+    text-shadow: 2px 2px red;
+}
+.SignIn_Register{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: red;
+    width:200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 45px;
+    transition: all 0.4s ease-in-out;
+}
+.SignIn_Register:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.SignIn_Register_a_tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'minecraft-font-2';
+    font-size:25px;
+    color: white;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+}
+.search_icon{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    /* text-shadow: 1px 1px red; */
+}
+.search_icon:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.Search{
+    margin-top: 5px;
+}
+.search-control::placeholder{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px red ;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.list{
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+.list_position{
+    position: absolute;
+    z-index: 1000;
+}
+.dropdown1{
+    text-decoration:none;
+    color: white;
+    display:none;
+    cursor: default; 
+    transition: all 0.3s ease-in-out;
+}
+.dropdown2{
+    text-decoration:none;
+    color: white;
+    display:none;
+    cursor: default;
+    transition: all 0.3s ease-in-out;
+}
+.dropdown_show{
+    text-decoration:none;
+    color: white;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.687);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    padding-bottom: 15px;
+    animation: slideIn 0.3s ease-out;
+}
+@keyframes slideIn{
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+.dropdown_show:hover{
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255) ;
+    transform: scale(1.05);
+}
+#search_icon{
+    filter:drop-shadow(2px 2px red);
+}
+.dd1{
+    display: flex;
+    align-items: center;
+    padding-top:45px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dd2{
+    display: flex;
+    align-items: center;
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.contactUsHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+.email_us{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    margin: 5px;
+    padding: 5px;
+}
+.email_us_description{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 5px;
+    padding: 5px;
+}
+#h1_tag_description{
+    font-family: 'minecraft-font-1';
+    font-size: 35px;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+}
+#p_tag_description_2{
+    font-family: 'minecraft-font-2';
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+#p_tag_description_1{
+    text-decoration: none;
+    font-family: 'minecraft-font-2';
+    font-size: 28px;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    font-style: bold;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 2px 2px red;
+    backdrop-filter: blur(8px);
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.32);
+}
+#p_tag_description_1:hover{
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(255, 0, 0);
+}
+.name_email{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.name{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: 'minecraft-font-2';
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.612);
+    color: white;
+    text-shadow: 2px 2px red;
+    height: 2.5rem;
+    width: 40%;
+
+}
+.name::placeholder{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px red ;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.email{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: 'minecraft-font-2';
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.612);
+    color: white;
+    text-shadow: 2px 2px red;
+    height: 2.5rem;
+    width: 55%;
+}
+.email::placeholder{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px red ;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.message{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition-delay: 100ms;
+}
+.text_area{
+    width: 100%;
+    height: 15rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: 'minecraft-font-2';
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.612);
+    color: white;
+    text-shadow: 2px 2px red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 25px;
+    backdrop-filter: blur(8px);
+}
+.text_area::placeholder {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px red ;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.send_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px rgb(0, 0, 0) ;
+    font-size: 30px;
+    letter-spacing: 2px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: 'minecraft-font-2';
+    background-color: rgb(255, 0, 0);
+    height: 4rem;
+    width: 30%;
+    transition: all 0.4s ease-in-out;
+}
+.send_btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.822);
+    backdrop-filter: blur(5px);
+    margin: 0px;
+    margin-top: 150px;
+    padding: 0px;
+    border-top: 4px solid rgba(255, 0, 0, 0.795);
+}
+.footer_left_part{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+}
+.footer_right_part{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+.social_icon{
+    width:35px;
+    height:auto;
+    filter: drop-shadow(2px 2px red);
+}
+.social_icon_div{
+    transition: transform 0.2s ease-in-out;
+}
+.social_icon_div:hover{
+    transform: scale(1.1);
+}
+.copyright{
+    padding-left: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px red ;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'minecraft-font-2';
+}
+/* .show-up-game-on-search{
+    
+} */
+.not_available_msg{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px red ;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'minecraft-font-2';
+    text-align: center;
+    display: none;
+    margin-top: 25px;
+}

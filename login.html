@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - ComedyGamesWorld</title>
+    <link rel="stylesheet" href="/login.css">
+    <script defer src="/login.js"></script>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="/videos/pixel lofi ~ best of pixel art & lofi hiphop mix.mp4" type="video/mp4">
+    </video>
+    <div class="logo_and_name">
+        <div class="logo"><a href="/index.html"><img id="logo_img" width="80px" height="auto" src="/images/logo_ComedyGamesWorld.png" alt=""></a></div>&nbsp;&nbsp;&nbsp;
+        <div class="name"><a href="/index.html" id="h2_a"><h2 id="name_of_website">ComedyGamesWorld</h2></a></div>
+    </div>
+    <div class="main_wrapper">
+        <div class="wrapper">
+            <form action="/login.php" method="post">
+                <h1>Login</h1>
+                <div class="input-field">
+                    <input type="text" required>
+                    <label>Enter your email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" required>
+                    <label>Enter your password</label>
+                </div>
+                <div class="forget">
+                    <label for="remember">
+                        <input type="checkbox" id="remember">
+                        <p>Remember me</p>
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit">Log In</button>
+                <div class="register">
+                    <p>Don't have an account? <a href="/register.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
